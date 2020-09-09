@@ -1,0 +1,10 @@
+{
+    "presets": [
+        ["@babel/env", {
+            "targets": {
+                "browsers": ["last 1 version", "ie >= 10"]
+            }
+        }],
+    ],
+    "plugins": ["@babel/plugin-transform-exponentiation-operator", "@babel/plugin-transform-spread", "@babel/plugin-proposal-object-rest-spread", ]
+}

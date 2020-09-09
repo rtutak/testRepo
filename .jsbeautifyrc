@@ -1,0 +1,7 @@
+{
+  "indent_size": 4,
+  "indent_char": " ",
+  "unformatted": "pre,code,textarea",
+  "indent_handlebars": true,
+  "preserve_newlines": false
+}
