@@ -17,11 +17,11 @@ if(config.cleanPublicPathOnStart){
 
 browserSync.init({
     watch: true,
-    // port: config.port,
-    // server: {
-    //     baseDir: config.publicPath,
-    //     directory: true,
-    // },
+    port: config.port,
+    server: {
+        baseDir: config.publicPath,
+        directory: true,
+    },
     logFileChanges: false,
     middleware: [
         webpackDevMiddleware(bundler, {

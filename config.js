@@ -2,12 +2,12 @@ const path = require('path')
 
 module.exports = {
     port: 3000,
-    publicPath: 'assets', 
+    publicPath: './', 
     cleanPublicPathOnStart: false,
     assetsCatalog:'',
     entry: {
         // scss
-        'css/style': './assets/scss/style.scss',
+        './assets/css/style': './assets/scss/style.scss',
     },
     modules:[
         "node_modules"
