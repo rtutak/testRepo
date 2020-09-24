@@ -132,6 +132,7 @@ body {
       font-weight: 400;
       font-size: 16px;
       color: $labelColor;
+      margin-top: 10px;
       width: 117px;
       height: 40px;
       margin-right: 20px;
@@ -285,7 +286,7 @@ body {
 .journeysTable {
   margin: 0 auto;
   margin-top: 22px;
-  width: 1083px;
+  width: $containerWidth;
   thead > tr > th {
     border-top: none;
   }
