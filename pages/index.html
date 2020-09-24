@@ -1,22 +1,158 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RS Studio</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="../assets/css/style.css">
-    </head>
-    <body>
-        <header>
+  <head>
+    <title>RS Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+  <body>
+    <header class="headerContainer">
+      <div>
+        <h1 class="logo">Logo</h1>
+        <div class="headerRightSide">
+          <input
+            type="text"
+            class="search"
+            placeholder="Search..."
+            name="search"
+          />
+          <div class="iconBell"><span class="bellIcon"></span></div>
+          <div class="avatarIcon"></div>
+        </div>
+      </div>
+    </header>
+    <section class="dashboard">
+      <div class="dashboardTop">
+        <span class="dashboardText">Dashboard</span>
+        <div class="dashboardFormContainer">
+          <label for="formSelect">Show data from:</label>
+          <select class="form-control selectForm" id="formSelect">
+            <option>Last year</option>
+            <option>Test year</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="grid-container">
+        <div class="vehicles">
+          <h3>Vehicles<span class="iconSearch"></span></h3>
+          <div class="vehiclesNumber">246</div>
+          <ul class="vehiclesList">
+            <li>
+              <div class="singleLiContainer">
+                <div class="carPlate">Volvo RZ 548765</div>
+                <div class="distanceDescription">
+                  <div>Traveled: 12.548 km</div>
+                  <div>Fuel: 3648l</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="singleLiContainer">
+                <div class="carPlate">Volvo RZ 548765</div>
+                <div class="distanceDescription">
+                  <div>Traveled: 12.548 km</div>
+                  <div>Fuel: 3648l</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-        </header>
-        <section>
+        <div class="fuel">
+          <h3>Fuel Consumption<span class="iconMore"></span></h3>
+          <div class="fuelNumber">15.859</div>
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="journeys">
+          <div class="journeysContainer">
+            <h3>Completed Journeys<span class="iconSearch"></span></h3>
+            <table class="table journeysTable">
+              <thead>
+                <tr>
+                  <th scope="col" class="lowContrastFont">STARTING POINT</th>
+                  <th scope="col" class="lowContrastFont">END POINT</th>
+                  <th scope="col" class="lowContrastFont">DISTANCE</th>
+                  <th scope="col" class="lowContrastFont">FUEL CONSUMPTION</th>
+                  <th scope="col" class="lowContrastFont">VEHICLE</th>
+                  <th scope="col" class="lowContrastFont">DRIVER</th>
+                </tr>
+              </thead>
+              <tbody class="normalFontTable">
+                <tr>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td>245km</td>
+                  <td>24,5l (10l/100km)</td>
+                  <td class="highlight">Volvo RZ 548765</td>
+                  <td class="highlight">Paweł Bis</td>
+                </tr>
+                <tr>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td>245km</td>
+                  <td>24,5l (10l/100km)</td>
+                  <td class="highlight">Volvo RZ 548765</td>
+                  <td class="highlight">Paweł Bis</td>
+                </tr>
+                <tr>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td>245km</td>
+                  <td>24,5l (10l/100km)</td>
+                  <td class="highlight">Volvo RZ 548765</td>
+                  <td class="highlight">Paweł Bis</td>
+                </tr>
+                <tr>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td>245km</td>
+                  <td>24,5l (10l/100km)</td>
+                  <td class="highlight">Volvo RZ 548765</td>
+                  <td class="highlight">Paweł Bis</td>
+                </tr>
+                <tr>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td class="locationTable">Country, City, Street 24</td>
+                  <td>245km</td>
+                  <td>24,5l (10l/100km)</td>
+                  <td class="highlight">Volvo RZ 548765</td>
+                  <td class="highlight">Paweł Bis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="vehiclesMap">
+          <h3>Vehicles Map<span class="iconMore"></span></h3>
+          <div class="mapImg"></div>
+        </div>
+      </div>
+    </section>
 
-        </section>
-        <footer>
-            
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="../assets/js/scripts.js"></script>
-    </body>
+    <footer></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <script src="../assets/js/scripts.js"></script>
+  </body>
 </html>
